@@ -36,6 +36,7 @@ class Movie(db.Model):
     poster_path = db.Column(db.String)
 
     # ratings = a list of Rating objects
+    # ratings = db.relationship('Ratings')
     def __repr__(self):
         return f'<Movie movie_id={self.movie_id} title={self.title}>'
 
